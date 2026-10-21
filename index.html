@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Drill 2</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Cambria, Georgia, serif;
+            background: #f8f3f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .container{
+            background: rgba(243, 217, 217, 0.6);
+            padding: 30px;
+            width: 430px;
+            border: 2px solid #b99494;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1{
+            color: #6b3f46;
+            margin-bottom: 10px;
+        }
+
+        h3{
+            color: #5f5555;
+            font-size: 15px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"]{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #c9a8a8;
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: Cambria, serif;
+        }
+
+        input[type="text"]:focus{
+            outline: none;
+            border-color: #8d6a6a;
+        }
+
+        input[type="button"]{
+            background: #b97b7b;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: Cambria, serif;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(243, 217, 217, 0.4); padding: 30px 20px; border-radius: 15px; border-color: #b99494; border-style: solid; color: rgb(33, 0, 6); display: inline-block; box-shadow: -1px 1px 17px 1px #daece7; font-size: 15px;">
+        <h1>Monarch Club Members</h1>
+        <h3>if you are not yet added to the members list, kindly insert your first and last name to be included</h3>
+        <input type="text" id="first_name" placeholder="enter your first name"><br><br>
+        <input type="text" id="last_name" placeholder="enter your last name"><br><br>
+        <input type="button" py-click="button" value="enter"><br><br>
+
+    <div id="results"></div></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
